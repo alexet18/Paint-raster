@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"
+        href = "style.css">
+    </head>
+    <body class = "body-container">
+        <div class="vertical-container">
+        <div class="nav">
+            <h1>Alexe Tudor web paint</h1>
+        </div>
+        <div class="canvas" id = "canvas-div">
+        <canvas id = "canvas" ></canvas>
+        <div class = "buttons">
+           <input type="button" value = "pencil" onclick="pencil()">
+           <input type="button" value = "circle" onclick="circle()">
+           <input type="button" value = "rectangle" onclick="rectangle()">
+           <input type="button" value = "eraser" onclick="erase()">
+           <input type="button" value = "clear screen" onclick="clearscrn()">
+           <input type="button" value = "fill" onclick="fill()">
+           <input type="button" value = "stroke" onclick="border()">
+           <label>width</label>
+           <select name = "Width" onchange="linew()" id = "Width">
+               <option value = "3">3 px</option>
+               <option value = "6">6 px</option>
+               <option value = "9">9 px</option>
+           </select>
+           <label>tool color</label>
+           <select name = "Toolcolor" id = "toolcolor">
+            <option value = "#000000">black</option>
+            <option value = "#ff99ff">pink</option>
+            <option value = "#f00000" >red</option>
+            <option value = "#ff9933">orange</option>
+            <option value = "#00ff00">green</option>
+            <option value = "#0000ff">blue</option>
+            <option value = "#aa0fff">purple</option>
+            <option value = "#ffff00">yellow</option>
+            <option value = "#666666">grey</option>
+        </select>
+           <label>background color</label>
+           <select name = "Backcolor" onchange = "backcolor()" id = "bckclr">
+            <option value = "#ffffff">white</option>
+            <option value = "#ff99ff">pink</option>
+            <option value = "#f00000">red</option>
+            <option value = "#ff9933">orange</option>
+            <option value = "#00ff00">green</option>
+            <option value = "#0000ff">blue</option>
+            <option value = "#aa0fff">purple</option>
+            <option value = "#ffff00">yellow</option>
+            <option value = "#666666">grey</option>
+        </select>
+        </div>
+        <div class = "buttons">
+            <input type="button" value = "save jpg" onclick="jpg()">
+            <input type="button" value = "save png" onclick="png()">
+            <input type="button" value = "save svg" onclick="svg()">
+        </div>
+    </div>
+</div>
+
+<script src="tools.js"></script>
+    </body>
+</html>
